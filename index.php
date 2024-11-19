@@ -7,12 +7,10 @@ $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 $whoops->register();
 
 use MiladRahimi\PhpRouter\Router;
-use Laminas\Diactoros\Response\JsonResponse;
 
 $router = Router::create();
 
-$router->get('/', [\App\Controllers\FrontController::class, 'home']);
-$router->get('/about', [\App\Controllers\FrontController::class, 'about']);
-$router->get('/category/{name}', [\App\Controllers\FrontController::class, 'category']);
+$router->get('/', [\App\Controllers\FrontController::class, 'index']);
+$router->get('/post/{id}', [\App\Controllers\FrontController::class, 'showSinglePost']);
 
 $router->dispatch();

@@ -1,0 +1,22 @@
+{% extends "layout.twig" %}
+
+
+
+{% block content %}
+    <article class="article">
+
+        <div class="post-img">
+            <img src="/{{ article.image }}" alt="" class="img-fluid">
+        </div>
+
+        <h2 class="title">{{ article.title }}</h2>
+
+        <div class="content">
+            {{ article.content|raw }}
+
+        </div><!-- End post content -->
+
+        <a href="/" class="btn btn-primary"> go Home page</a>
+
+    </article>
+{% endblock %}

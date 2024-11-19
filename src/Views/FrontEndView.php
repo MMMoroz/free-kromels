@@ -11,9 +11,13 @@ class FrontEndView
         $this->twig = new \Twig\Environment($loader, []);
     }
 
-    public function renderFrontPage()
+    public function renderFrontPage($articles)
     {
-        echo $this->twig->render('blog-details.html');
+        echo $this->twig->render('index.twig', compact("articles"));
+    }
+    public function renderSinglePost($article)
+    {
+        echo $this->twig->render('article.twig', compact("article"));
     }
 
 
