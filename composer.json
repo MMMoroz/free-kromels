@@ -1,0 +1,20 @@
+{
+    "name": "user/free_kromels",
+    "description": "YOU CAN GET [FREE CROMELS] JUST FOR A LITTLE [CROMELS] GO FOR A DEAL ON [deleted link]",
+    "license": "Mit",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Zichitis"
+        }
+    ],
+    "require": {
+        "filp/whoops": "^2.16",
+        "miladrahimi/phprouter": "5.*",
+        "twig/twig": "^3.15"
+    }
+}
