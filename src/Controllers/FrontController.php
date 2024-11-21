@@ -19,7 +19,7 @@ class FrontController
     public function showSinglePost($id)
     {
        $article = $this->Article->find($id);
-        $this->view->renderSinglePost($article);
+       $this->view->renderSinglePost($article);
     }
 
     public function index()
